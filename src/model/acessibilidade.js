@@ -17,7 +17,8 @@ const acessibilidadeSchema = new mongoose.Schema({
         type: Boolean
     },
     tema: {
-        id: mongoose.Types.ObjectId
+        id: mongoose.Types.ObjectId,
+        titulo: String
     }
 }, 
 { collection: 'Acessibilidade' })
