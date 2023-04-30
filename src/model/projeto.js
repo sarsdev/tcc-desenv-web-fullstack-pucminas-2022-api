@@ -13,6 +13,10 @@ const projetoSchema = new mongoose.Schema({
         type: String,
         enum: ['interno', 'externo']
     },
+    etapa: {
+        type: String,
+        enum: ['backlog', 'analise', 'andamento', 'concluido', 'cancelado']
+    },
     previsao_conclusao: Date,
     inicio_projeto: Date,
     final_projeto: Date,
