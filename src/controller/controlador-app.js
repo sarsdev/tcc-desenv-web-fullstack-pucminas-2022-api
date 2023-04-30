@@ -94,6 +94,47 @@ exports.putEquipe = async (req, res) => {
     RetornaRequisicao(res, retorno)
 }
 
+// Projeto
+
+exports.getProjeto = async (req, res) => {
+    let retorno = await Servico.ListaProjetos(req.query)
+    RetornaRequisicao(res, retorno)
+}
+
+exports.postProjeto = async (req, res) => {
+    let retorno = await Servico.InsereProjeto(req.body)
+    RetornaRequisicao(res, retorno)
+}
+
+exports.putProjeto = async (req, res) => {
+    let retorno = await Servico.AtualizaProjeto(req.body)
+    RetornaRequisicao(res, retorno)
+}
+
+// Agenda
+
+exports.getAgenda = async (req, res) => {
+    let retorno = await Servico.ListaAgenda(req.query)
+    RetornaRequisicao(res, retorno)
+}
+
+exports.putAgenda = async (req, res) => {
+    let retorno = await Servico.AtualizaAgenda(req.body)
+    RetornaRequisicao(res, retorno)
+}
+
+// Configuração da Agenda
+
+exports.getConfigAgenda = async (req, res) => {
+    let retorno = await Servico.ListaConfigAgenda(req.query)
+    RetornaRequisicao(res, retorno)
+}
+
+exports.putConfigAgenda = async (req, res) => {
+    let retorno = await Servico.AtualizaConfigAgenda(req.body)
+    RetornaRequisicao(res, retorno)
+}
+
 // Funções internas
 
 const RetornaRequisicao = (res, retorno) => {

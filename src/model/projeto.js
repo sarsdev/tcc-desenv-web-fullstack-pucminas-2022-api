@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const Colaborador = require('./usuario')
 
 const projetoSchema = new mongoose.Schema({
     titulo: {
@@ -12,8 +11,7 @@ const projetoSchema = new mongoose.Schema({
     nome_cliente: String,
     tipo: {
         type: String,
-        required: true,
-        enum: ['Interno', 'Externo']
+        enum: ['interno', 'externo']
     },
     previsao_conclusao: Date,
     inicio_projeto: Date,
@@ -22,7 +20,21 @@ const projetoSchema = new mongoose.Schema({
         type: Number,
         min: 0.00
     },
-    colaboradores: [Colaborador]
+    colaboradores: [
+        {
+            id: mongoose.Types.ObjectId,
+            nome: String,
+            cargo: String,
+            funcao: {
+                id: mongoose.Types.ObjectId,
+                nome: String
+            },
+            equipe: {
+                id: mongoose.Types.ObjectId,
+                nome: String
+            }
+        }
+    ]
 }, 
 { collection: 'Projeto' })
 

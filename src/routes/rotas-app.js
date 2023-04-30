@@ -32,4 +32,17 @@ router.get('/equipe', ControladorSegur.validaToken, Controlador.getEquipe)
 router.post('/equipe', ControladorSegur.validaToken, Controlador.postEquipe)
 router.put('/equipe', ControladorSegur.validaToken, Controlador.putEquipe)
 
+// Projeto
+router.get('/projeto', ControladorSegur.validaToken, Controlador.getProjeto)
+router.post('/projeto', ControladorSegur.validaToken, Controlador.postProjeto)
+router.put('/projeto', ControladorSegur.validaToken, Controlador.putProjeto)
+
+// Agenda
+router.get('/agenda', ControladorSegur.validaToken, Controlador.getAgenda)
+router.put('/agenda', ControladorSegur.validaToken, Controlador.putAgenda)
+
+// Configuração da Agenda
+router.get('/config-agenda', ControladorSegur.validaToken, Controlador.getConfigAgenda)
+router.put('/config-agenda', ControladorSegur.validaToken, Controlador.putConfigAgenda)
+
 module.exports = router
