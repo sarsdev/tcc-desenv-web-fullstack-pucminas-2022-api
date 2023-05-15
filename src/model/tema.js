@@ -10,13 +10,7 @@ Temas:
     - Suave
 */
 const temaSchema = new mongoose.Schema({
-    titulo: String,
-    cores: {
-        texto: String,
-        fundo: String,
-        botao: String,
-        toolbar: String
-    }
+    titulo: String
 }, 
 { collection: 'Tema' })
 
