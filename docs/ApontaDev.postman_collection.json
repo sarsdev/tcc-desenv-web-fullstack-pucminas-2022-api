@@ -1,0 +1,1148 @@
+{
+	"info": {
+		"_postman_id": "ea40fd7c-367f-4b96-a038-8c1ed5dcc805",
+		"name": "ApontaDev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AreaDesenvolvedor",
+			"item": [
+				{
+					"name": "Aplicação",
+					"item": [
+						{
+							"name": "Listar",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{UrlBase}}/dev/aplicacao",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"dev",
+										"aplicacao"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "643aa689de72afafd2ca1d08",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Inserir",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"titulo\": \"Acompanhamento\",\r\n    \"funcionalidades\": [\r\n        \"Pesquisar\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/dev/aplicacao",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"dev",
+										"aplicacao"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"_id\": \"643aa689de72afafd2ca1d08\",\r\n    \"titulo\": \"Aplicação AB 01\",\r\n    \"funcionalidades\": [\r\n        \"funcao 7\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/dev/aplicacao",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"dev",
+										"aplicacao"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remover",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{UrlBase}}/dev/aplicacao?id=643abfeb34ac641fc2a0ce3b",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"dev",
+										"aplicacao"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "643abfeb34ac641fc2a0ce3b"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Tema",
+					"item": [
+						{
+							"name": "Listar",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{UrlBase}}/dev/tema",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"dev",
+										"tema"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "643aa689de72afafd2ca1d08",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Inserir",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"titulo\": \"Suave\",\r\n    \"cores\": {\r\n        \"texto\": \"#000000\",\r\n        \"fundo\": \"#ffffff\",\r\n        \"botao\": \"#e6e6e6\",\r\n        \"toolbar\": \"#0066ff\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/dev/tema",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"dev",
+										"tema"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"titulo\": \"Teste 2 beta\",\r\n    \"cores\": {\r\n        \"texto\": \"Branco\",\r\n        \"fundo\": \"Preto\",\r\n        \"botao\": \"Cinza-claro\",\r\n        \"toolbar\": \"Azul\"\r\n    },\r\n    \"_id\": \"643b216347a1c25a715e583c\",\r\n    \"__v\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/dev/tema",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"dev",
+										"tema"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remover",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{UrlBase}}/dev/tema?id=643b216347a1c25a715e583c",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"dev",
+										"tema"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "643b216347a1c25a715e583c"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "AreaPublica",
+			"item": [
+				{
+					"name": "Usuário",
+					"item": [
+						{
+							"name": "Listar",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{UrlBase}}/usuario",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"usuario"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "643c872f603603dd580a9134",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "renan@gmail.com",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Inserir",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dados_pessoais\": {\r\n        \"cpf\": \"123.123.123-95\",\r\n        \"nome\": \"Usuario 1604\"\r\n    },\r\n    \"dados_acesso\": {\r\n        \"senha\": \"123$456\",\r\n        \"data_ultimo_acesso\": \"2023-01-02T02:59:59.000Z\",\r\n        \"ind_acesso_temporario\": false,\r\n        \"situacao\": \"aprovado\"\r\n    },\r\n    \"dados_colaborador\": {\r\n        \"funcao\": {\r\n            \"id\": \"643b57e2df766db7105ddd14\",\r\n            \"nome\": \"analista de desenvolvimento\"\r\n        },\r\n        \"equipe\": {\r\n            \"id\": \"643b57e2df766db7105ddd14\",\r\n            \"nome\": \"equipe a\"\r\n        },\r\n        \"cargo\": \"programador iii\",\r\n        \"fator_produtividade\": 1.41\r\n    },\r\n    \"email\": \"renan@gmail.com\",\r\n    \"situacao\": \"ativo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/usuario",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"usuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dados_pessoais\": {\r\n        \"cpf\": \"123.123.123-99\",\r\n        \"nome\": \"joão john\"\r\n    },\r\n    \"dados_acesso\": {\r\n        \"senha\": \"1245@Tr1\",\r\n        \"data_ultimo_acesso\": \"2023-01-02T02:59:59.000Z\",\r\n        \"ind_acesso_temporario\": true,\r\n        \"situacao\": \"pendente\"\r\n    },\r\n    \"dados_colaborador\": {},\r\n    \"_id\": \"643c872f603603dd580a9134\",\r\n    \"email\": \"joaojonh@gmail.com\",\r\n    \"situacao\": \"inativo\",\r\n    \"__v\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/usuario",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"usuario"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Permissão",
+					"item": [
+						{
+							"name": "Listar",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{UrlBase}}/permissao?idusuario=643be710f3736eef53953950",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"permissao"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "643bf9beadef860752e13aac",
+											"disabled": true
+										},
+										{
+											"key": "tipo",
+											"value": "cadastrado",
+											"disabled": true
+										},
+										{
+											"key": "idusuario",
+											"value": "643be710f3736eef53953950"
+										},
+										{
+											"key": "idtela",
+											"value": "643be710f3736eef53953950",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Inserir",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tela\": {\r\n        \"id\": \"643be710f3736eef53953950\",\r\n        \"titulo\": \"simulador\"\r\n    },\r\n    \"funcionalidade\": {\r\n        \"todos\": false,\r\n        \"selecionados\": [\r\n            \"incluir\",\r\n            \"excluir\"\r\n        ]\r\n    },\r\n    \"equipe\": {\r\n        \"todos\": true,\r\n        \"selecionados\": []\r\n    },\r\n    \"funcao\": {\r\n        \"todos\": true,\r\n        \"selecionados\": []\r\n    },\r\n    \"usuario\": {\r\n        \"todos\": false,\r\n        \"selecionados\": [\r\n            {\r\n                \"id\": \"643be710f3736eef53953950\",\r\n                \"nome\": \"João John\",\r\n                \"_id\": \"643bf920adef860752e13aa3\"\r\n            }\r\n        ]\r\n    },\r\n    \"tipo\": \"cadastrado\",\r\n    \"acesso\": \"sim\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/permissao",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"permissao"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remover",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlbmFuQGdtYWlsLmNvbSIsInNlbmhhIjoiMTIzJDQ1NiIsImlhdCI6MTY4MTY5NTQzNywiZXhwIjoxNjgxNjk5MDM3fQ.Hm47WIRD1pTcuyWtF16eC5Zf2HuON0Ne80boLrpiYWo",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{UrlBase}}/permissao?id=643bf9dfadef860752e13ab2",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"permissao"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "643bf9dfadef860752e13ab2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Acessibilidade",
+					"item": [
+						{
+							"name": "Listar",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{UrlBase}}/acessibilidade",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"acessibilidade"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "643b57e2df766db7105ddd14",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "usuario010@gmail.com",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Inserir",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"usuario\": {\r\n        \"id\": \"643b269461fe076c63e90f96\",\r\n        \"email\": \"usuario011@gmail.com\"\r\n    },\r\n    \"modo_leitura\": true,\r\n    \"modo_atalho_unico\": true,\r\n    \"tema\": {\r\n        \"id\": \"643b269461fe076c63e90fc3\",\r\n        \"titulo\": \"Dia\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/acessibilidade",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"acessibilidade"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"usuario\": {\r\n        \"id\": \"643c872f603603dd580a9134\",\r\n        \"email\": \"joaojonh@gmail.com\"\r\n    },\r\n    \"tema\": {\r\n        \"id\": \"643b269461fe076c63e90fc3\",\r\n        \"titulo\": \"Dia\"\r\n    },\r\n    \"_id\": \"643b5748297b4cfc5cc65675\",\r\n    \"modo_leitura\": true,\r\n    \"modo_atalho_unico\": true,\r\n    \"__v\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/acessibilidade",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"acessibilidade"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Função",
+					"item": [
+						{
+							"name": "Listar",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{UrlBase}}/funcao",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"funcao"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "643b2ebbae2a74f36837528d",
+											"disabled": true
+										},
+										{
+											"key": "nome",
+											"value": "desenv",
+											"description": "Pesquisa por parte do nome da função também",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Inserir",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nome\": \"Gerente\",\r\n  \"fator_produtividade_esperado\": 0,\r\n  \"percentual_estimativa_esperado\": 0,\r\n  \"situacao\": \"ativo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/funcao",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"funcao"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"gerente\",\r\n    \"fator_produtividade_esperado\": 0,\r\n    \"percentual_estimativa_esperado\": 0,\r\n    \"situacao\": \"inativo\",\r\n    \"_id\": \"643be710f3736eef53953950\",\r\n    \"__v\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/funcao",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"funcao"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Equipe",
+					"item": [
+						{
+							"name": "Listar",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{UrlBase}}/equipe",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"equipe"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "643beb15551eba732fe9fa85",
+											"disabled": true
+										},
+										{
+											"key": "nome",
+											"value": "equipe",
+											"description": "Pesquisa por parte do nome",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Inserir",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Equipe C\",\r\n    \"descricao\": \"Time que atente as demandas novas funcionalidades\",\r\n    \"situacao\": \"ativo\",\r\n    \"integrantes\": [\r\n        {\r\n            \"id\": \"643b2ee2ae2a74f3683752ff\",\r\n            \"nome\": \"João John\",\r\n            \"cargo\": \"Técnico I\",\r\n            \"funcao\": {\r\n                \"id\": \"643b2ee2ae2a74f368375291\",\r\n                \"nome\": \"analista de desenvolvimento\"\r\n            }\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/equipe",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"equipe"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"_id\": \"643beb15551eba732fe9fa85\",\r\n    \"nome\": \"equipe a\",\r\n    \"descricao\": \"Time que atente as demandas iniciais\",\r\n    \"situacao\": \"ativo\",\r\n    \"__v\": 0,\r\n    \"integrantes\": [\r\n        {\r\n            \"id\": \"643b2ee2ae2a74f3683752aa\",\r\n            \"nome\": \"Maria Marie\",\r\n            \"cargo\": \"Programadora II\",\r\n            \"funcao\": {\r\n                \"id\": \"643b2ee2ae2a74f368375291\",\r\n                \"nome\": \"analista de desenvolvimento\"\r\n            }\r\n        },\r\n        {\r\n            \"id\": \"643b2ee2ae2a74f3683752ab\",\r\n            \"nome\": \"Julio July\",\r\n            \"cargo\": \"Analista de Negócio III\",\r\n            \"funcao\": {\r\n                \"id\": \"643b2ebbae2a74f36837528d\",\r\n                \"nome\": \"analista de negócio\"\r\n            }\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/equipe",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"equipe"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Projeto",
+					"item": [
+						{
+							"name": "Listar",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{UrlBase}}/projeto",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"projeto"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "644e7a2c3e8dc1d75db22f69",
+											"disabled": true
+										},
+										{
+											"key": "usuarioid",
+											"value": "643c872f603603dd580a9134",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Inserir",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"titulo\": \"Proj_002_ComparativoDeEstoque\",\r\n    \"codigo_externo\": \"Projeto_45\",\r\n    \"descricao\": \"Desenvolvimento de aplicação para comparar estoque e encontrar divergências\",\r\n    \"nome_cliente\": \"Estoquim LTDA\",\r\n    \"tipo\": \"externo\",\r\n    \"etapa\": \"backlog\",\r\n    \"previsao_conclusao\": \"2023-12-31\",\r\n    \"inicio_projeto\": \"2023-4-1\",\r\n    \"final_projeto\": \"2023-12-31\",\r\n    \"horas_estimadas\": 682,\r\n    \"colaboradores\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/projeto",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"projeto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"_id\": \"644e7a2c3e8dc1d75db22f69\",\r\n    \"titulo\": \"Proj_002_ComparativoDeEstoque\",\r\n    \"codigo_externo\": \"Projeto_45\",\r\n    \"descricao\": \"Desenvolvimento de aplicação para comparar estoque e encontrar divergências\",\r\n    \"nome_cliente\": \"Estoquim LTDA\",\r\n    \"tipo\": \"externo\",\r\n    \"etapa\": \"analise\",\r\n    \"previsao_conclusao\": \"2023-12-31T00:00:00.000Z\",\r\n    \"inicio_projeto\": \"2023-04-01T03:00:00.000Z\",\r\n    \"final_projeto\": \"2023-12-31T00:00:00.000Z\",\r\n    \"horas_estimadas\": 682,\r\n    \"colaboradores\": [\r\n        {\r\n            \"funcao\": {\r\n                \"id\": \"643b2f09ae2a74f368375295\",\r\n                \"nome\": \"coordenador\"\r\n            },\r\n            \"equipe\": {\r\n                \"id\": \"644bf2e65cbe750d73ad5beb\",\r\n                \"nome\": \"equipe tiozão\"\r\n            },\r\n            \"id\": \"643c872f603603dd580a9134\",\r\n            \"nome\": \"joão jj\",\r\n            \"cargo\": \"coordenador i\",\r\n            \"_id\": \"644e7ad93e8dc1d75db22f78\"\r\n        }\r\n    ],\r\n    \"__v\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/projeto",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"projeto"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Agenda",
+					"item": [
+						{
+							"name": "Configuracao",
+							"item": [
+								{
+									"name": "Listar",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{Token}}",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "{{UrlBase}}/config-agenda",
+											"host": [
+												"{{UrlBase}}"
+											],
+											"path": [
+												"config-agenda"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "644ed69a1a7e4ca356433eba",
+													"disabled": true
+												},
+												{
+													"key": "usuarioid",
+													"value": "643c872f603603dd580a9134",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Atualizar",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{Token}}",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"_id\": \"644ed54b1a7e4ca356433eb7\",\r\n    \"id_colaborador\": \"643c872f603603dd580a9134\",\r\n    \"ordena_grid_por_ultimo\": false,\r\n    \"mostra_obg_apos_apont\": false,\r\n    \"encerra_apont_ao_iniciar_outro\": false,\r\n    \"total_horas_jornada\": 28800000,\r\n    \"texto_padrao_obs\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{UrlBase}}/config-agenda",
+											"host": [
+												"{{UrlBase}}"
+											],
+											"path": [
+												"config-agenda"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Listar",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{UrlBase}}/agenda",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"agenda"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "644e79cc3e8dc1d75db22f65",
+											"disabled": true
+										},
+										{
+											"key": "projetoid",
+											"value": "644e7a2c3e8dc1d75db22f69",
+											"disabled": true
+										},
+										{
+											"key": "usuarioid",
+											"value": "643c872f603603dd580a9134",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"projeto\": {\r\n            \"id\": \"644e79cc3e8dc1d75db22f62\",\r\n            \"tipo\": \"externo\",\r\n            \"titulo\": \"Proj_001_ComparativoDePreços\",\r\n            \"descricao\": \"Desenvolvimento de aplicação para comparar preços de concorrentes\",\r\n            \"nome_cliente\": \"Precim SA\",\r\n            \"previsao_conclusao\": \"2023-08-31T03:00:00.000Z\",\r\n            \"horas_estimadas\": 185\r\n        },\r\n        \"_id\": \"644e79cc3e8dc1d75db22f65\",\r\n        \"apontamentos\": [\r\n            {\r\n                \"colaborador\": {\r\n                    \"id\": \"643c872f603603dd580a9134\",\r\n                    \"nome\": \"joão jj\"\r\n                },\r\n                \"data\": \"2023-07-31T00:00:00.000Z\",\r\n                \"hora_inicial\": \"2023-07-31T11:31:49.000Z\",\r\n                \"hora_final\": \"2023-07-31T12:31:49.000Z\",\r\n                \"saldo\": 3600000,\r\n                \"observacao\": \"Apontamento diário\",\r\n                \"_id\": \"644e7e9a2866aee765febea7\"\r\n            },\r\n            {\r\n                \"colaborador\": {\r\n                    \"id\": \"643c872f603603dd580a9134\",\r\n                    \"nome\": \"joão jj\"\r\n                },\r\n                \"data\": \"2023-07-31\",\r\n                \"hora_inicial\": \"2023-07-31T11:29:00Z\",\r\n                \"hora_final\": \"2023-07-31T12:29:00Z\",\r\n                \"saldo\": 3600000,\r\n                \"observacao\": \"Apontamento diário\"\r\n            }\r\n        ],\r\n        \"__v\": 0\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{UrlBase}}/agenda",
+									"host": [
+										"{{UrlBase}}"
+									],
+									"path": [
+										"agenda"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Teste_Inicial",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlBase}}",
+					"host": [
+						"{{UrlBase}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"renan@gmail.com\",\r\n    \"senha\": \"123$456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlBase}}/token",
+					"host": [
+						"{{UrlBase}}"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "UrlBaseLocal",
+			"value": "http://localhost:3001",
+			"type": "default",
+			"disabled": true
+		},
+		{
+			"key": "UrlBaseRender",
+			"value": "https://tcc-pucminas-fullstackweb-api.onrender.com",
+			"type": "default",
+			"disabled": true
+		},
+		{
+			"key": "UrlBase",
+			"value": "https://tcc-pucminas-fullstackweb-api.onrender.com",
+			"type": "default"
+		},
+		{
+			"key": "Token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlbmFuQGdtYWlsLmNvbSIsInNlbmhhIjoiMTIzJDQ1NiIsImlhdCI6MTY4MTc3NDQ1NywiZXhwIjoxNjgxNzc4MDU3fQ.xgnDC3yRvrEuzVFyBu6TO2XbGLRqjp8qQAC-RNSn6Xg",
+			"type": "default"
+		}
+	]
+}
